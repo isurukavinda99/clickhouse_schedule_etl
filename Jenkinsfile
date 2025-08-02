@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                 echo "✅ Packaging application into zip file for AWS Lambda..."
-                zip -r ${ZIP_FILE} app/
+                zip -r ${ZIP_FILE} lambda_function.py
                 ls -lh
                 '''
             }
